@@ -1,0 +1,3 @@
+Pseudocodes:
+
+1.Average of two numbers:
