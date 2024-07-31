@@ -1,0 +1,12 @@
+input int array[]
+initialize int i
+initialize int temp
+initialize int len = length(array)
+for i in range(len-1)
+	if array[i]>array[i+1]
+		temp = array[i]
+		array[i] = array[i+1]
+		array[i+1] = temp
+	end if
+end for
+print array[len - 1]

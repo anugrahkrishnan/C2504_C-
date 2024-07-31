@@ -1,0 +1,14 @@
+initialize double balance = 0
+initialize double deposit = 0
+initialize double withdrawal = 0
+input char operation               // 'd' for deposit, 'w' for withdrawal, 'c' for balance check
+if (operation == 'd')
+	input deposit
+	balance += deposit
+	deposit = 0
+else if (operation == 'w')
+	input withdrawal
+	balance -= withdrawal
+	withdrawal = 0
+else
+	print balance
