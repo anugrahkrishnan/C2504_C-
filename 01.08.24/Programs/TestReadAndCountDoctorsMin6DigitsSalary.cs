@@ -38,6 +38,11 @@ namespace LearningC_
             Console.WriteLine($"Count : {count}"); 
         }
 
+        //doctorNum =3 , [100,1000,100000] , 1
+        //doctorNum =4 , [100,200000,100000] , 2
+        //doctorNum =2 , [100,10000] , 0
+
+
         static void Main(string[] args) //user: p
         {
             Console.WriteLine("------------------------TestReadAndCountDoctorsMin6DigitsSalary------------------------------");
