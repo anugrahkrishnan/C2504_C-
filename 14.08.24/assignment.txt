@@ -144,7 +144,7 @@ namespace OOPCricket
         public int OffSide { set; get; }
         public int Straight { set; get; }
         public int ThirdMan { set; get; }
-        public Rectangle(int_legside, int _offside,int_straight,int_thirdman)
+        public Cricket(int_legside, int _offside,int_straight,int_thirdman)
         {
             this.LegSide = _legside;
             this.OffSide = _offside;
