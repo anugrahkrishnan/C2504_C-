@@ -1,0 +1,150 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Interface_example
+{
+    abstract class Employee1
+    {
+        public abstract decimal CalculateSalary();
+    }
+
+    class FullTimeEmployee1 : Employee1
+    {
+        public decimal BaseSalary { get; set; }
+        public decimal BonusPercentage { get; set; }
+
+        public FullTimeEmployee1(decimal baseSalary, decimal bonusPercentage)
+        {
+            BaseSalary = baseSalary;
+            BonusPercentage = bonusPercentage;
+        }
+
+        public override decimal CalculateSalary()
+        {
+            return BaseSalary + (BaseSalary * BonusPercentage);
+        }
+    }
+
+    class PartTimeEmployee1 : Employee1
+    {
+        public decimal HourlyRate { get; set; }
+        public int HoursWorked { get; set; }
+
+        public PartTimeEmployee1(decimal hourlyRate, int hoursWorked)
+        {
+            HourlyRate = hourlyRate;
+            HoursWorked = hoursWorked;
+        }
+
+        public override decimal CalculateSalary()
+        {
+            return HourlyRate * HoursWorked;
+        }
+
+       
+    }
+    internal class Program3
+    {
+        static void Main(string[] args)
+        {
+            var choice = "";
+
+            decimal MinSalary = 0;
+            decimal MaxSalary = 0;  
+            int i = 0;
+
+
+            do
+            {
+                Console.WriteLine("Choose 1 for Full time or 2 for Part Time :");
+                int input = int.Parse(Console.ReadLine());
+                if (input == 1)
+                {
+                    Console.WriteLine("Enter BaseSalary");
+                    decimal bsalary = decimal.Parse(Console.ReadLine());
+                    Console.WriteLine("Enter BonusPercentage");
+                    decimal bpercentage = decimal.Parse(Console.ReadLine());
+                    Employee1 fullTime = new FullTimeEmployee1(bsalary, bpercentage);
+                    decimal TotalSalary = fullTime.CalculateSalary();
+                    Console.WriteLine(TotalSalary);
+                    if(i==0)
+                    {
+                        MinSalary = TotalSalary;
+                        MaxSalary = TotalSalary;
+                    }
+                       
+
+                    if (TotalSalary < MinSalary)
+                    {
+                        MinSalary = TotalSalary;
+                       
+                    }
+                    
+                    if (TotalSalary > MaxSalary)
+                    {
+                        MaxSalary= TotalSalary;
+                    }
+
+
+
+                }
+
+                else if (input == 2)
+                {
+                    Console.WriteLine("Enter HourlyRate");
+                    decimal hrate = decimal.Parse(Console.ReadLine());
+                    Console.WriteLine("Enter HoursWorked");
+                    int hworked = int.Parse(Console.ReadLine());
+                    Employee1 partTime = new PartTimeEmployee1(hrate, hworked);
+                    decimal TotalHourlySalary = partTime.CalculateSalary();
+                    Console.WriteLine(partTime.CalculateSalary());
+
+                    if (i == 0)
+                    {
+                        MinSalary = TotalHourlySalary;
+                        MaxSalary = TotalHourlySalary;
+                    }
+                       
+
+                    if (TotalHourlySalary < MinSalary)
+                    {
+                        MinSalary = TotalHourlySalary;
+                        
+                    }
+
+                    if (TotalHourlySalary > MaxSalary)
+                    {
+                        MaxSalary = TotalHourlySalary;
+                    }
+
+
+
+
+
+
+                }
+
+                else
+                {
+                    Console.WriteLine("Enter Valid choice !!!!!");
+                    continue;
+                }
+
+             
+                Console.WriteLine("Do you wish to continue? Yes/No ");
+                choice = Console.ReadLine();
+                i++;
+            }
+
+
+            while (choice == "yes");
+
+            Console.WriteLine($"Minimum Salary : {MinSalary}");
+            Console.WriteLine($"Maximum Salary : {MaxSalary}");
+
+        }
+    }
+}
