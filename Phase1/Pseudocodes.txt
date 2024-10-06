@@ -1,0 +1,171 @@
+Pseudocodes:
+
+1.Average of two numbers:
+
+	Dhoni
+	pseudo: 
+		Input num1
+		Input num2
+		Sum = num1 + num2
+		Average = Sum/2 
+		Print Average
+
+	Kohli 
+	pseudo: routine 
+    		Function FindAverage(num1,num2) 
+    		Sum = num1 + num2
+		Average = Sum/2 
+    		return Average 
+    
+	Rohith
+	pseudo: routine test
+    		Procedure TestFindAverage()
+        	Input num1
+		Input num2 
+        	Average = FindAverage(num1,num2)
+        	Print Average 
+
+2.Cube of a number:
+
+	Neha
+	pseudo: 
+    		Input num 
+    		cube = num * num * num 
+    		Print cube 
+
+	Gopika 
+	pseudo: routine 
+    		Function FindCube(num)
+        	cube = num * num * num 
+        	Return cube 
+    
+	Shilpa
+	pseudo: routine test
+    		Procedure TestFindCube()
+        	Input num 
+        	cube = FindCube(num)
+        	Print cube 
+
+3.Square of a number:
+
+	Neha
+	pseudo: 
+    		Input num 
+    		Square = num * num
+    		Print Square 
+
+	Gopika 
+	pseudo: routine 
+    		Function FindSquare(num)
+        	Square = num * num 
+        	Return Square 
+    
+	Shilpa
+	pseudo: routine test
+    		Procedure TestFindSquare()
+        	Input num 
+        	cube = FindSquare(num)
+        	Print Square 
+
+4.Swaping two numbers:
+
+	Neha
+	pseudo: 
+    		Input num1
+		Input num2
+ 		num1 = num1 + num2
+		num2 = num1 - num2
+		num1 = num1 - num2 
+		Return (num1,num2)
+
+	Gopika 
+	pseudo: routine 
+    		Function SwapTwoNumbers(num1,num2)
+		num1 = num1 + num2
+		num2 = num1 - num2
+		num1 = num1 - num2 
+        	Return (num1,num2)
+    
+	Shilpa
+	pseudo: routine test
+    		Procedure TestSwapTwoNumbers()
+        	Input num1
+		input num2 
+        	num1,num2 = SwapTwoNumbers(num1,num2)
+        	Output num1
+		Output num2
+
+5.Divisibility by 3:
+
+	Neha
+	pseudo: 
+    		Input num
+		if num % 3 == 0
+			return true
+		else
+			return false
+
+	Gopika 
+	pseudo: routine 
+    		Function DivisibilityByThree(num)
+		if num % 3 == 0
+			return true
+		else
+			return false
+    
+	Shilpa
+	pseudo: routine test
+    		Procedure TestDivisibilityByThree()
+        	Input num 
+        	if DivisibilityByThree(num)
+        		Output 'Number divisible by 3'
+		else
+			Output 'Number not divisible by 3'
+
+6.Divisibility by 27:
+
+	Neha
+	pseudo: 
+    		Input num
+		if num % 27 == 0
+			return true
+		else
+			return false
+
+	Gopika 
+	pseudo: routine 
+    		Function DivisibilityByTwentyseven(num)
+		if num % 27 == 0
+			return true
+		else
+			return false
+    
+	Shilpa
+	pseudo: routine test
+    		Procedure TestDivisibilityByTwentyseven()
+        	Input num 
+        	if DivisibilityByTwentyseven(num)
+        		Output 'Number divisible by 27'
+		else
+			Output 'Number not divisible by 27'
+
+7.Print N natural numbers:
+
+	Neha
+	pseudo: 
+    		Input Range
+		for i in 1 to Range+1
+			print i
+
+	Gopika 
+	pseudo: routine 
+    		Function PrintNaturalNumber(Range)
+		for i in 1 to Range+1
+			print i
+    
+	Shilpa
+	pseudo: routine test
+    		Procedure TestPrintNaturalNumber()
+        	Input Range 
+		PrintNaturalNumber(Range)
+        	

@@ -1,0 +1,6 @@
+DECLARE i AS INT
+FOR i IN RANGE(11)
+	IF(i % 2 == 0)
+		PRINT i
+	END IF
+END FOR

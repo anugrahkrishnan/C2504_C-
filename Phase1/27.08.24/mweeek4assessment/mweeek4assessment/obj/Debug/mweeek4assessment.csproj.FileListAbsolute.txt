@@ -1,0 +1,10 @@
+D:\c# practice\mweeek4assessment\mweeek4assessment\bin\Debug\mweeek4assessment.exe.config
+D:\c# practice\mweeek4assessment\mweeek4assessment\bin\Debug\mweeek4assessment.exe
+D:\c# practice\mweeek4assessment\mweeek4assessment\bin\Debug\mweeek4assessment.pdb
+D:\c# practice\mweeek4assessment\mweeek4assessment\obj\Debug\mweeek4assessment.csproj.AssemblyReference.cache
+D:\c# practice\mweeek4assessment\mweeek4assessment\obj\Debug\mweeek4assessment.csproj.CoreCompileInputs.cache
+D:\c# practice\mweeek4assessment\mweeek4assessment\obj\Debug\mweeek4assessment.exe
+D:\c# practice\mweeek4assessment\mweeek4assessment\obj\Debug\mweeek4assessment.pdb
+D:\c# practice\mweeek4assessment\mweeek4assessment\bin\Debug\log4net.dll
+D:\c# practice\mweeek4assessment\mweeek4assessment\bin\Debug\log4net.xml
+D:\c# practice\mweeek4assessment\mweeek4assessment\obj\Debug\mweeek4a.05D519A6.Up2Date

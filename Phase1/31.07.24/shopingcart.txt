@@ -1,0 +1,11 @@
+double totalcost = 0
+double discount_price 
+double discount_rate 
+input price_array
+for i in length(price_array)
+	total_cost += price_array[i]
+end for
+if (total_cost > discount_price)
+	total_cost = total_cost * discount_rate
+end if
+print total_cost

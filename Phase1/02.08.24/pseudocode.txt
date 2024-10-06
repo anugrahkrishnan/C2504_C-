@@ -1,0 +1,263 @@
+// fibonacci using do while loop
+//PSEUDO
+function  PrintFibonacciFor(int N)
+    {
+        int a = 0, b = 1, c;
+
+        print("Fibonacci series: ");
+        int i =0;
+        do
+        {
+           print(a + " ");
+            c = a + b;
+            a = b;
+            b = c;
+            i++
+        }while ( i < N )
+       print newline
+    }
+
+ function TestPrintFibonacciFor()
+    
+       print("Enter the number of terms: ");
+       input N
+       PrintFibonacciFor(N);
+    
+
+
+// fibonacci using while loop
+//PSEUDO
+function  PrintFibonacciFor(int N)
+    {
+        int a = 0, b = 1, c;
+
+        print("Fibonacci series: ");
+        int i =0;
+        while ( i < N )
+        {
+           print(a + " ");
+            c = a + b;
+            a = b;
+            b = c;
+            i++
+        }
+       print newline
+    }
+
+ function TestPrintFibonacciFor()
+    
+       print("Enter the number of terms: ");
+       input N
+       PrintFibonacciFor(N);
+
+
+// fibonacci using for loop
+function  PrintFibonacciFor(int N)
+    {
+        int a = 0, b = 1, c;
+
+        print("Fibonacci series: ");
+        for (int i = 0; i < N; i++)
+        {
+           print(a + " ");
+            c = a + b;
+            a = b;
+            b = c;
+        }
+       print newline
+    }
+
+ function TestPrintFibonacciFor()
+    
+       print("Enter the number of terms: ");
+       input N
+       PrintFibonacciFor(N);
+
+
+//pseudo forloop for nth term fibonacci
+
+function GetFibonacciFor(int N)
+    {
+        if (N <= 0)
+            return 0; // Handle invalid cases
+
+        int a = 0, b = 1, c = 0;
+
+        if (N == 1)
+            return a;
+        if (N == 2)
+            return b;
+
+        for (int i = 3; i <= N; i++)
+        {
+            c = a + b;
+            a = b;
+            b = c;
+        }
+
+        return b;
+    }
+function TestFibonacciFor()
+    {
+      print("Enter the term number: ");
+       input N
+       int result = GetFibonacciFor(N);
+        Console.WriteLine($"The {N}-th Fibonacci term is: {result}");
+    }
+
+
+//pseudo WHILEloop for nth term fibonacci
+
+function GetFibonacciFor(int N)
+    {
+        if (N <= 0)
+            return 0; // Handle invalid cases
+
+        int a = 0, b = 1, c = 0;
+
+        if (N == 1)
+            return a;
+        if (N == 2)
+            return b;
+      int i = 3;
+       while ( i <= N )
+        {
+            c = a + b;
+            a = b;
+            b = c;
+            i++;
+        }
+
+        return b;
+    }
+function TestFibonacciFor()
+    {
+      print("Enter the term number: ");
+       input N
+       int result = GetFibonacciFor(N);
+        Console.WriteLine($"The {N}-th Fibonacci term is: {result}");
+    }
+
+
+//pseudo DOWHILEloop for nth term fibonacci
+
+function GetFibonacciFor(int N)
+    {
+        if (N <= 0)
+            return 0; // Handle invalid cases
+
+        int a = 0, b = 1, c = 0;
+
+        if (N == 1)
+            return a;
+        if (N == 2)
+            return b;
+      int i = 3;
+      do
+        {
+            c = a + b;
+            a = b;
+            b = c;
+            i++;
+        } while ( i <= N )
+
+        return b;
+    }
+function TestFibonacciFor()
+    {
+      print("Enter the term number: ");
+       input N
+       int result = GetFibonacciFor(N);
+        Console.WriteLine($"The {N}-th Fibonacci term is: {result}");
+    }
+
+
+//printing using for loop
+
+ function GetPrintNumberFor(int N)
+    {
+        for (int row = 1; row <= N; row++)
+        {
+            int spaces = N - row;
+            int num = 1;
+            for (int col = 1; col <= N; col++)
+            {
+                if (col <= spaces)
+                    print(" ");
+                else
+                   print(col);
+            }
+           print newline
+        }
+    }
+
+    function TestGetPrintNumberFor()
+    {
+        print("Enter number of lines: ");
+        input N
+        GetPrintNumberFor(N); // Fixed syntax error here
+    }
+
+
+//printing triangle using while loop
+
+ function GetPrintNumberFor(int N)
+    {
+        int row = 1;
+        while( row <= N)
+        {
+            int spaces = N - row;
+            int num = 1;
+            int col = 1;
+            while ( col <= N )
+            {
+                if (col <= spaces)
+                    print(" ");
+                else
+                   print(col);
+                   col++
+            }
+           print newline
+           row++;
+        }
+    }
+
+    function TestGetPrintNumberFor()
+    {
+        print("Enter number of lines: ");
+        input N
+        GetPrintNumberFor(N); // Fixed syntax error here
+    }
+
+
+//printing triangle using DOwhile loop
+
+//PSEUDO
+
+ function GetPrintNumberFor(int N)
+    {
+        int row = 1;
+        do
+        {
+            int spaces = N - row;
+            int num = 1;
+            int col = 1;
+           do
+            {
+                if (col <= spaces)
+                    print(" ");
+                else
+                   print(col);
+                   col++
+            } while ( col <= N );
+           print newline
+           row++;
+        }while( row <= N);
+    }
+
+    function TestGetPrintNumberFor()
+    {
+        print("Enter number of lines: ");
+        input N
+        GetPrintNumberFor(N); // Fixed syntax error here
+    }
